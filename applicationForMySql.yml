@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: validate #Eğer Create olursa tabloyu baştan yaratır
+server:
+  error:
+    include-message: always
+  datasource:
+    url: jdbc:mysql://localhost:3306/database
+    username: root
+    password: pass
+    driverClassName: com.mysql.jdbc.Driver
